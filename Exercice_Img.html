@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculer l'img</title>
+    <link rel="stylesheet" href="Exercice_Img.css" />
+    <script src="Exercice_Img.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculer votre IMG (Indice de Masse Grasse)</h1>
+      <label for="taille">Taille (cm) :</label>
+      <input type="text" id="taille" />
+      <label for="age">Âge :</label>
+      <input type="text" id="age" />
+      <label for="poids">Poids (kg) :</label>
+      <input type="text" id="poids" />
+      <div class="radio-container">
+        <label for="femme">Femme</label>
+        <input type="radio" name="sexe" id="femme" value="femme" />        
+        <label for="homme">Homme</label>
+        <input type="radio" name="sexe" id="homme" value="homme" />
+      </div>
+      <input type="submit" id="btn" value="Calculer IMG" onclick="Calculerimg()"/>
+      <label for="img">IMG :</label>
+      <input type="text" id="img" disabled />
+      <label for="type">Vous êtes en :</label>
+      <input type="text" id="categorie" disabled />
+      <div class="image-container">
+      <img src="./image/tableauIMG.jpg" alt="Tableau_Img">
+    </div>
+    </div>
+  </body>
+</html>

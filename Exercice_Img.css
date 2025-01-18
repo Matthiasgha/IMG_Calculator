@@ -1,0 +1,107 @@
+/* Style général */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  color: #b30000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Conteneur global */
+.container {
+  max-width: 900px;
+  margin: 5px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels et champs */
+label {
+  font-weight: bold;
+  margin-top: 2px;
+  display: block;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:disabled {
+  background-color: #e9e9e9;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Bouton de calcul */
+input[type="submit"] {
+  background-color: #800080;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e005e;
+}
+
+/* Section des radio boutons */
+input[type="radio"] {
+  margin-right: 50px;
+}
+
+/* Aligner les labels des radios horizontalement */
+.radio-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+label[for="femme"],
+label[for="homme"] {
+  font-weight: normal;
+  margin-right: 15px; /* Espacement entre les labels */
+  margin-left: 5px;
+}
+
+/* Section des résultats */
+#categorie {
+  font-size: 1.5em;
+  color: #003366;
+  margin-top: 5px;
+}
+.image-container img{
+  margin-top: 20px;
+  width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+}
